@@ -12,9 +12,15 @@ typedef struct avl {
 } *AVL;
 
 AVL maisProfundo (AVL a) {
-    AVL aux;
-    aux = a;
-    return aux;
+    AVL r;
+    
+    if(a->bal > 0 && a->left != NULL) r = maisProfundo(a->left);
+   
+    else if(a->right != NULL) r = maisProfundo(a->right);
+    
+    else r = a;
+   
+    return r;
 }
 
 int main() {
