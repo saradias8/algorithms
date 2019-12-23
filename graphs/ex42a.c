@@ -20,7 +20,7 @@ int bipartition (Graph g, int v1[]) {
         }
     return 1;
 }
-/*
+
 int main() {
     Graph g;
 
@@ -43,4 +43,4 @@ int main() {
     printf("é bipartido? %d \n", bipartition(g,v1));
 
     return 0;
-}*/
+}
